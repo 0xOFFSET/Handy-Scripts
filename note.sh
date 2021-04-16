@@ -7,22 +7,22 @@ NOTES_DIR="/home/$USER/Dropbox/Notes"
 # Comment the section below if it's not your first run!
 
 #check text editor
-# if [ -z `which sublime-text.subl` ]; then
-#     echo "Sublime not installed!"
-#     echo "Run: sudo snap install sublim-text --classic"
-#     exit
-# fi
+if [ -z `which sublime-text.subl` ]; then
+    echo "Sublime not installed!"
+    echo "Run: sudo snap install sublim-text --classic"
+    exit
+fi
 
 # check dropbox
-# if [ -z `which dropbox` ]; then
-#     echo "Dropbox doesn't exist!"
-#     echo "Please, install it first, and create Notes directory inside Dropbox dir."
-# fi
+if [ -z `which dropbox` ]; then
+    echo "Dropbox doesn't exist!"
+    echo "Please, install it first, and create Notes directory inside Dropbox dir."
+fi
 
 # check directory where to save note files
-# if ! [ -d $NOTES_DIR ]; then
-#     mkdir $NOTES_DIR
-# fi
+if ! [ -d $NOTES_DIR ]; then
+    mkdir $NOTES_DIR
+fi
 
 #----------------------------------------------------------#
 
